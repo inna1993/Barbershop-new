@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+@font-face {
+    font-family: 'pt_sans_narrowbold';
+    src: url('../fonts/ptsansnarrow-bold.eot');
+    src: url('../fonts/ptsansnarrow-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptsansnarrow-bold.woff2') format('woff2'),
+         url('../fonts/ptsansnarrow-bold.woff') format('woff'),
+         url('../fonts/ptsansnarrow-bold.svg#pt_sans_narrowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 14px/24px PT Sans Narrow, Arial, Tahoma, sans-serif;
+	text-transform: uppercase;
+	background: url("/images/dest/main-bg.jpg") no-repeat 50% 0;
+	background-size: cover;
+	color: #FFF;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	max-width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+

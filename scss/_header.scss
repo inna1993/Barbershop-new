@@ -1,0 +1,107 @@
+.container-1200 {
+	max-width: 1200px;
+	background: #000;
+	max-height: 70px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.navigation__list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.navigation a {
+	color: #FFF;
+	font-size: 16px;
+	margin: 30px 20px;
+	display: block;
+	line-height: 10px;
+	position: relative;
+}
+
+.navigation__login {
+	display: flex;
+	align-items: center;
+}
+
+.navigation__login a.login-icon {
+	margin: 27px 0;
+}
+
+.navigation__login a {
+	margin-left: 15px;
+}
+
+.navigation a:not(.login-icon):after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+	width: 100%;
+	top: 36px;
+	right: 0;
+	height: 4px;
+	transition: .3s;
+	z-index: 5;
+	background-color: #FFF;
+}
+
+.navigation a:not(.login-icon):hover:after,
+.navigation a:not(.login-icon):active:after{
+	opacity: 1;
+}
+
+.main-logo {
+	margin: 60px 300px 30px;
+}
+
+.info {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: 0 -15px;
+}
+
+.info__col-33 {
+	width: 33.3%;
+	color: #FFF;
+	text-align: center;
+	margin: 0 30px;
+	line-height: 24px;
+	padding-bottom: 85px;
+}
+
+.info__col-33 h2 {
+	font-size: 30px;
+	color: #FFF;
+	position: relative;
+	padding-bottom: 85px;
+}
+
+.info__col-33 p {
+	font-size: 14px;
+}
+
+.info__col-33 h2:after {
+	content: '';
+    width: 28px;
+    height: 28px;
+    background: #FFF;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    position: absolute;
+    left: 50%;
+    top: 56px;
+} 
+

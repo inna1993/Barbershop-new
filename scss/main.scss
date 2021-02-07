@@ -1,4 +1,7 @@
-body {
-	background: yellow;
-	color: red;
-}
+@import "base";
+@import "header";
+@import "form";
+@import "gallery";
+@import "info_block";
+@import "footer";
+@import "modal";
