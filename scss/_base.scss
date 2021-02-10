@@ -20,8 +20,9 @@
 body {
 	font: 14px/24px PT Sans Narrow, Arial, Tahoma, sans-serif;
 	text-transform: uppercase;
-	background: url("../images/dest/main-bg.jpg") no-repeat 50% 0;
+	background: url("/images/dest/main-bg.jpg") no-repeat 50% 0;
 	background-size: cover;
+	color: #FFF;
 }
 
 ul {
@@ -46,16 +47,3 @@ a {
 	margin: 0 auto;
 }
 
-.row {
-	display: flex;
-}
-
-.col {
-	flex-grow: 1;
-	width:  100%;
-	
-	&--50 {
-		@extend .col;
-		width: 50%;
-	}
-}

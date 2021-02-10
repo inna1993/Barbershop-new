@@ -1,0 +1,32 @@
+.btn {
+	background: $black;
+	color: $white;
+	text-align: center;
+	height: 43px;
+	border: 2px solid $black;
+	padding: 7px 12px 6px;
+	display: inline-block;
+	transition: .3s;
+	
+	&:hover {
+		background: $white;
+		color: $black;
+	}
+	
+	&__small {
+		@extend .btn;
+		width: 43px;
+	}
+	&__medium {
+		@extend .btn;
+		min-width: 78px;
+	}
+	&__large {
+		@extend .btn;
+		min-width: 140px;
+	}
+	&__fullWidth {
+		@extend .btn;
+		width: 100%;
+	}
+}

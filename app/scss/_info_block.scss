@@ -1,0 +1,47 @@
+.infoBlock {
+	position: relative;
+	
+	&__container {
+		background: $light_bg;
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 52px 80px 54px;
+	}
+	
+	.col--50 {
+		&:first-child {
+			margin-right: 90px;
+		}
+		
+		&:last-child {
+			margin-left: 90px;
+		}
+	}
+	
+	&__divider {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		height: 64%;
+	}
+	
+	.title--30 {
+		margin: 0 0 35px;
+	}
+	
+	&__date {
+		font-family: Georgia, sans-serif;
+		font-style: italic;
+		font-size: 14px;
+		line-height: 1;
+		color: $black;
+		font-weight: 400;
+		text-transform: lowercase;
+	}
+	
+	&__box {
+		margin-bottom: 35px;
+	}
+	
+}

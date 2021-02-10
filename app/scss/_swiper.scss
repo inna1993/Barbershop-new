@@ -1,0 +1,61 @@
+.swiper {
+
+	&-container {
+		max-width: 300px;
+		max-height: 180px;
+	}
+	
+	&-navigation {
+		position: relative;
+		margin-top: 37px;
+		height: 43px;
+	}
+
+}	
+
+.swiper-button {
+	
+	&-next {
+		@extend .btn__large;
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+	
+	&-prev {
+		@extend .btn__large;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+	
+	&-next:after {
+		content: 'вперед';	
+		font: 14px/24px PT Sans Narrow,Arial,Tahoma,sans-serif;
+		text-transform: uppercase !important;
+	} 
+	
+	&-prev:after {
+		content: 'назад';	
+		font: 14px/24px PT Sans Narrow,Arial,Tahoma,sans-serif;
+		text-transform: uppercase !important;
+	}
+}	
+
+.swiper-slide {
+	max-width: 300px;
+	max-height: 180px;
+	border: 7px solid $white;
+	position: relative;
+	width: 300px;
+	height: 180px;
+}	
+
+.swiper-slide img {
+	width: 286px;
+	height: 166px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

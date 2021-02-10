@@ -10,53 +10,52 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+}
 
+.navigation__list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
 
-	&__list {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
-	}
+.navigation a {
+	color: #FFF;
+	font-size: 16px;
+	margin: 30px 20px;
+	display: block;
+	line-height: 10px;
+	position: relative;
+}
 
-	& a {
-		color: $white;
-		font-size: 16px;
-		margin: 30px 20px;
-		display: block;
-		line-height: 10px;
-		position: relative;
-	}
+.navigation__login {
+	display: flex;
+	align-items: center;
+}
 
-	&__login {
-		display: flex;
-		align-items: center;
-	}
+.navigation__login a.login-icon {
+	margin: 27px 0;
+}
 
-	&__login a.login-icon {
-		margin: 27px 0;
-	}
+.navigation__login a {
+	margin-left: 15px;
+}
 
-	&__login a {
-		margin-left: 15px;
-	}
+.navigation a:not(.login-icon):after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+	width: 100%;
+	top: 36px;
+	right: 0;
+	height: 4px;
+	transition: .3s;
+	z-index: 5;
+	background-color: #FFF;
+}
 
-	& a:not(.login-icon):after {
-		position: absolute;
-		content: '';
-		opacity: 0;
-		width: 100%;
-		top: 36px;
-		right: 0;
-		height: 4px;
-		transition: .3s;
-		z-index: 5;
-		background-color: $white;
-	}
-
-	& a:not(.login-icon):hover:after,
-	& a:not(.login-icon):active:after{
-		opacity: 1;
-	}
+.navigation a:not(.login-icon):hover:after,
+.navigation a:not(.login-icon):active:after{
+	opacity: 1;
 }
 
 .main-logo {
@@ -72,7 +71,7 @@
 
 .info__col-33 {
 	width: 33.3%;
-	color: $white;
+	color: #FFF;
 	text-align: center;
 	margin: 0 30px;
 	line-height: 24px;
@@ -81,7 +80,7 @@
 
 .info__col-33 h2 {
 	font-size: 30px;
-	color: $white;
+	color: #FFF;
 	position: relative;
 	padding-bottom: 85px;
 }
@@ -94,7 +93,7 @@
 	content: '';
     width: 28px;
     height: 28px;
-    background: $white;
+    background: #FFF;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);

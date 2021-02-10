@@ -1,0 +1,15 @@
+.title {
+	text-transform: uppercase;
+	
+	&--30 {
+		@extend .title;
+		font-size: 30px;
+		color: $black;
+	}
+	
+	&--30white {
+		@extend .title--30;
+		color: $white;
+		
+	}
+}

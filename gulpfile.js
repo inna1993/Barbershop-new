@@ -11,7 +11,6 @@ const newer = require('gulp-newer');
 const del = require('del');
 
 
-
 function browsersync() {
 	browserSync.init({ // Инициализация Browsersync
 		server: { baseDir: 'app/' }, // Указываем папку сервера
@@ -82,7 +81,6 @@ function startwatch() {
 	watch('app/images/src/**/*', images);
  
 }
-
 
 exports.browsersync = browsersync;
 exports.scripts = scripts;
