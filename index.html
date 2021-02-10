@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Barbershop</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 						<ul class="navigation__list">
 							<li><a href="#">главная</a></li>
 							<li><a href="#info">информация</a></li>
-							<li><a href="#">новости</a></li>
+							<li><a href="#news">новости</a></li>
 							<li><a href="#">прайс-лист</a></li>
 							<li><a href="#">магазин</a></li>
 							<li><a href="#">контакты</a></li>
@@ -27,27 +28,73 @@
 							<a href="#">вход</a>
 						</div>
 					</div>
-					<div class="main-logo">
-						<img src="images/dest/logo.png" alt="Logo">
+				</div>	
+			</div>	
+			<div class="container">
+				<div class="main-logo">
+					<img src="images/dest/logo.png" alt="Logo">
+				</div>	
+				<div id="info" class="info">
+					<div class="info__col-33">
+						<h2>быстро</h2>
+						<p>
+							мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+						</p>
 					</div>	
-					<div id="info" class="info">
-						<div class="info__col-33">
-							<h2>быстро</h2>
-							<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
-						</div>
-						<div class="info__col-33">
-							<h2>круто</h2>
-							<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
-						</div>
-						<div class="info__col-33">
-							<h2>дорого</h2>
-							<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
-						</div>
+					<div class="info__col-33">
+						<h2>круто</h2>
+						<p>
+							забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.
+						</p>
 					</div>
+					<div class="info__col-33">
+						<h2>дорого</h2>
+						<p>
+							наши мастера — профессионалы своего дела и не могут стоить дешево. к тому, разве цена не дает определенный статус?
+						</p>
+					</div>	
 				</div>	
 			</div>
 		</header>
+		<div class="infoBlock" id="news">
+			<div class="infoBlock__container">
+				<div class="row">
+					<div class="col--50">
+						<h4 class="title--30">новости</h4>
+						<div class="infoBlock__box">
+							<p class="infoBlock__text">
+							нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
+							</p>
+							<span class="infoBlock__date">25 сентября</span>
+						</div>	
+						<div class="infoBlock__box">
+							<p class="infoBlock__text">
+							в нашей команде пополнение, борис «бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+							</p>
+							<span class="infoBlock__date">19 сентября</span>
+						</div>	
+						<a href="news.html" class="btn__large">новости</a>
+					</div>
+					<div class="col--50">
+						<h4 class="title--30">фотогалерея</h4>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="images/dest/slide1.jpg" alt="Slide 1"></div>
+								<div class="swiper-slide"><img src="images/dest/slide2.jpg" alt="Slide 1"></div>
+								<div class="swiper-slide"><img src="images/dest/slide3.jpg" alt="Slide 1"></div> 
+							</div>
+						</div>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>	
+					</div>
+				</div>
+				<img class="infoBlock__divider" src="images/dest/divider.png" alt="">
+			</div>
+		</div>
 	</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>	
 <script src="js/app.min.js"></script> 
 </body>
 </html>

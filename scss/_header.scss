@@ -10,52 +10,53 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-}
 
-.navigation__list {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-}
 
-.navigation a {
-	color: #FFF;
-	font-size: 16px;
-	margin: 30px 20px;
-	display: block;
-	line-height: 10px;
-	position: relative;
-}
+	&__list {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+	}
 
-.navigation__login {
-	display: flex;
-	align-items: center;
-}
+	& a {
+		color: $white;
+		font-size: 16px;
+		margin: 30px 20px;
+		display: block;
+		line-height: 10px;
+		position: relative;
+	}
 
-.navigation__login a.login-icon {
-	margin: 27px 0;
-}
+	&__login {
+		display: flex;
+		align-items: center;
+	}
 
-.navigation__login a {
-	margin-left: 15px;
-}
+	&__login a.login-icon {
+		margin: 27px 0;
+	}
 
-.navigation a:not(.login-icon):after {
-	position: absolute;
-	content: '';
-	opacity: 0;
-	width: 100%;
-	top: 36px;
-	right: 0;
-	height: 4px;
-	transition: .3s;
-	z-index: 5;
-	background-color: #FFF;
-}
+	&__login a {
+		margin-left: 15px;
+	}
 
-.navigation a:not(.login-icon):hover:after,
-.navigation a:not(.login-icon):active:after{
-	opacity: 1;
+	& a:not(.login-icon):after {
+		position: absolute;
+		content: '';
+		opacity: 0;
+		width: 100%;
+		top: 36px;
+		right: 0;
+		height: 4px;
+		transition: .3s;
+		z-index: 5;
+		background-color: $white;
+	}
+
+	& a:not(.login-icon):hover:after,
+	& a:not(.login-icon):active:after{
+		opacity: 1;
+	}
 }
 
 .main-logo {
@@ -71,7 +72,7 @@
 
 .info__col-33 {
 	width: 33.3%;
-	color: #FFF;
+	color: $white;
 	text-align: center;
 	margin: 0 30px;
 	line-height: 24px;
@@ -80,7 +81,7 @@
 
 .info__col-33 h2 {
 	font-size: 30px;
-	color: #FFF;
+	color: $white;
 	position: relative;
 	padding-bottom: 85px;
 }
@@ -93,7 +94,7 @@
 	content: '';
     width: 28px;
     height: 28px;
-    background: #FFF;
+    background: $white;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
